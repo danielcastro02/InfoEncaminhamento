@@ -1,0 +1,25 @@
+header, main, footer{
+   padding-left: 0px !important;
+}
+.sidenav{
+    display: none;
+}
+.mostrarSaldo{
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+    .divIconPdv {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .textoBoaNoite {
+        display: none;
+    }
+
+    .cardComSaldo {
+        margin-bottom: 5px;
+        height: 45px;
+    }
+}

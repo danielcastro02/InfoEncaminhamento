@@ -1,0 +1,2431 @@
+:root {
+    --corPadrao2: #1d345c;
+}
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    z-index: 500;
+
+}
+
+select[readonly] {
+    background: #eee; /*Simular campo inativo - Sugestão @GabrielRodrigues*/
+    pointer-events: none;
+    touch-action: none;
+}
+
+p {
+    /*wtfk quem fez isso aqui???*/
+    /*text-transform: capitalize;*/
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: #e0f7fa !important;
+}
+
+.fotoPerfil {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fotoPerfilLoader {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+.linkfoto {
+    border-radius: 50%;
+    background: linear-gradient(transparent, transparent, black);
+    background-size: 50px;
+    opacity: 0;
+    height: 150px;
+    padding-top: 65%;
+    transition: ease-in 0.2s;
+}
+
+.linkfoto:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+    .modal {
+        margin: -15px 1vw 1vw;
+        width: 98vw;
+        max-width: 100%;
+    }
+}
+
+.modal {
+    max-height: 80%;
+}
+
+.homeimg {
+    /*    background-image: url('../Img/bg1.jpg');
+        background-size: 100%;
+        background-attachment: fixed;*/
+}
+
+/*
+
+.corpadrao{
+        background: linear-gradient(to bottom, #0277bd , #039be5);
+    background: linear-gradient(to bottom, #0277bd , #039be5);
+}
+
+.corcancelar{
+        background: linear-gradient(to bottom, #0277bd , #039be5);
+    background: linear-gradient(to bottom, #d32f2f , #e53935 );
+}
+
+.alerta_vermelho{
+    color: red;
+}
+
+*/
+
+
+.pulse-button {
+    box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+    animation: pulse 3s infinite;
+}
+
+body {
+    display: flex;
+    max-width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('../Img/bg1.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px #ffde00;
+    }
+    33% {
+        -webkit-box-shadow: 0 0 0 40px #ff00f5
+    }
+    66% {
+        -webkit-box-shadow: 0 0 0 40px #0099ff;
+
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0px #17ff00;
+    }
+}
+
+.modal {
+    overflow: auto;
+}
+
+main {
+    flex: 1 0 auto;
+    min-height: 80vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+body{
+    scrollbar-width : 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+/*::-webkit-scrollbar {
+    width: 0px;
+}*/
+
+
+.corPadrao1 {
+    /*Branco*/
+    background: #FFFFFF;
+}
+
+.corPadrao3 {
+    /*Vermelho forte*/
+    background: #d40000 !important;
+}
+
+.corPadrao2 {
+    /*Verde*/
+    background: #137e27 !important;
+}
+
+.corPadrao4{
+    /*Verde*/
+    background: #0F8F00 !important;
+}
+
+.textoCorPadrao2 {
+    color: #06022B;
+
+}
+
+.textoCorPadrao3 {
+    color: #DB6A21;
+    font-weight: bold;
+    cursor: default;
+}
+
+.textoCorPadrao4{
+    color: #0F8F00;
+}
+
+.right-divider {
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0), gray, rgba(0, 0, 0, 0)) 1 100%;
+    border-left: none;
+}
+
+.input-little{
+    margin: 0 0 2px 0 !important;
+    height: 1rem !important;
+}
+
+.left-divider {
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0), gray, rgba(0, 0, 0, 0)) 1 100%;
+    border-right: none;
+}
+.left-solid-divider {
+    border-left: solid 1px  #e0e0e0;
+
+}
+.right-solid-divider {
+    border-right: solid 1px  #e0e0e0;
+}
+.bottom-solid-divider {
+    border-bottom: solid 1px  #e0e0e0;
+}
+.top-solid-divider {
+    border-top: solid 1px  #e0e0e0;
+}
+
+
+.horizontal-divider {
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    height: 1px;
+}
+
+
+.inline-icon {
+    vertical-align: bottom;
+}
+
+/*Botão de entrar na tela login.php*/
+.btnLogin{
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 4px
+}
+
+.animi,
+.giraEmudaCor,
+.giraEmudaCorFloating,
+.soGira{
+    transition: ease-in 0.2s;
+}
+
+.bot:hover .bota {
+    color: #DB6A21;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.detalheSuave {
+    border-radius: 50%;
+    max-width: 32px;
+    max-height: 32px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+/*deixar as imagens com o mesmo tamanho*/
+/*.imagemServico{
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}*/
+
+.fotoServico {
+    height: 100%;
+    width: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sideChat {
+    position: fixed;
+    height: 80%;
+    bottom: 0;
+    right: 5px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 25px 25px 0px 0px;
+    z-index: 500;
+}
+
+.headChat {
+    height: 6%;
+    background-color: var(--corPadrao2);
+    color: white;
+    border-radius: 25px 25px 0px 0px;
+    text-align: center;
+    min-height: 5px;
+    padding: 2.5px;
+}
+
+.bodyChat {
+    overflow: auto;
+    height: 94%;
+}
+
+.headChatBox {
+    height: 35px;
+    background-color: var(--corPadrao2);
+    color: white;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    min-height: 5px;
+    padding: 2.5px;
+}
+
+.bodyChatBox {
+    overflow: auto;
+    height: calc(86% - 35px);
+}
+
+.openChat {
+    display: block !important;
+}
+
+.chatBox {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    width: 350px;
+    max-width: 90%;
+    height: 800px;
+    max-height: 70%;
+    min-height: 500px;
+    background-color: whitesmoke;
+    border-radius: 25px 25px 0 0;
+    z-index: 500;
+}
+
+.messageChat {
+    line-height: 15px;
+}
+
+.inputChat {
+    height: 14%;
+}
+
+/*Para mexer no sidenav*/
+nav {
+    background-color: #06022B !important;
+}
+
+nav .sidenav-trigger i {
+    height: 45px !important;
+    line-height: 45px !important;
+}
+
+.sidenav {
+    /*background-color: rgba(120, 160, 187, 1);*/
+    width: 245px !important;
+    /*transition: linear;*/
+}
+
+.sidenav li > a {
+    padding: 0 20px !important;
+}
+
+.sidenav li > a > i.material-icons {
+    margin: 0 20px 0 0 !important;
+}
+
+/*para deixar a sidNav empurrando o restante do html para a direita quando em fullscren*/
+
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0 !important;
+    }
+}
+
+/* Mudar propriedas da class chip */
+.chip {
+    display: inline-block;
+    height: 32px !important;
+    font-size: 13px;
+    font-weight: bold !important;
+    color: rgba(255, 255, 255, 1) !important;
+    line-height: 32px !important;
+    padding: 0 29px 0 18px !important;
+    border-radius: 16px;
+    margin-bottom: -12px;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chipNav {
+    display: inline-block;
+    height: 35px!important;
+    font-size: 13px;
+    font-weight: 700!important;
+    color: #fff!important;
+    line-height: 35px!important;
+    padding: 0 18px!important;
+    border-radius: 16px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.chip .close {
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+
+@media only screen and (max-width: 601px) {
+    .chip {
+        height: 32px !important;
+        line-height: 32px !important
+    }
+    .btnLogin{
+        border-radius: 36px;
+    }
+    .chart-container {
+        height: 55vh !important;
+    }
+    .card .card-content {
+        padding-top: 5px !important;
+        height: 56vh !important;
+    }
+    .btnAddCategoria{
+        /*width: 8rem !important;*/
+    }
+    .iconBtnAddCategoria {
+        margin-right: 0 !important;
+    }
+    .graficoFluxoCaicaIndex {
+        height: calc(55vh + 120px) !important;
+    }
+    .divCartaozinhos {
+        padding-right: 1% !important;
+        padding-left: 1% !important;
+    }
+}
+
+.chip:focus {
+    outline: none;
+    background-color: #26a69a;
+    color: #fff;
+}
+
+/*Mantem o botão sair fixo na parte de baixo*/
+.linhaDobtSair {
+    /*margin-top: 0px;*/
+    position: fixed;
+    bottom: 65px;
+    width: 100%
+}
+
+
+/*Muda a cor do icone do select na nav*/
+#ulAesquerda .input-field .select-wrapper .caret{
+    fill: #fff !important;
+}
+/*Muda a cor do que esta escrito dentro do campo selected*/
+#ulAesquerda .input-field .select-wrapper input.select-dropdown {
+    color: white !important;
+}
+
+/*Faz o campo do select ter uma margim quando em telas maiores de 992px e voltar a 0px igual ou menor que isso*/
+#ulAesquerda{
+    margin-left: 260px;
+}
+
+@media only screen and (max-width: 992px) {
+    #ulAesquerda{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #ulAesquerda{
+        margin-left: 0;
+    }
+
+    .btnGrandeFooter{
+        width: 60% !important;
+    }
+
+    .saldoDoMes div, .saldoDoMesRealizado div {
+        transform: rotate(-55deg) translateX(-20px) !important;
+    }
+
+    .saldoDoMes, .saldoDoMesRealizado {
+        height: 60px !important;
+        align-items: flex-start !important;
+    }
+
+    .collectionItemMeu, .cabecalho {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .conteinerListMovimentos {
+        width: 98% !important;
+    }
+
+    .paddingTira {
+        padding: 0 1% !important;
+    }
+
+    .movimentosCabeca {
+        padding: 7px 7px !important;
+    }
+
+    .reducaoFont {
+        font-size: .8rem;
+    }
+
+    .mudaOPaddingColab {
+        padding: 5px !important;
+    }
+    .displayBasicoDois {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}
+
+/*ajusta o tamnho do input-field*/
+.input-field-ajustes{
+    width: 250px;
+    height: 45px;
+}
+
+/*@media only screen and (max-width: 530px){*/
+/*    .input-field-ajustes {*/
+/*        width: 200px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 485px){*/
+/*    .input-field-ajustes{*/
+/*        width: 160px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 438px){*/
+/*    .input-field-ajustes{*/
+/*        width: 140px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 420px){*/
+/*    .input-field-ajustes{*/
+/*        width: 120px;*/
+/*    }*/
+/*}*/
+
+@media only screen and (max-width: 360px){
+    .input-field-ajustes{
+        width: 230px;
+    }
+/*    .input-field-ajustes{*/
+/*        width: 100px;*/
+/*    }*/
+
+/*    .mostrarSaldo{*/
+/*        font-size: 1.2rem !important;*/
+/*    }*/
+}
+/*Muda as propriedades do dropdown que esta na navbar com a foto de perfil*/
+
+.iconeFotoNav{
+    position: relative;
+    background-color: transparent;
+    margin: 4px 20px 0 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 560px){
+    .iconeFotoNav{
+        margin-right: 4px;
+    }
+}
+
+/*linha com o saldo*/
+.mostrarSaldo{
+    line-height: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.iconeFotoNav:hover{
+    background-color: rgba(219, 106, 33, 0.95) !important;
+}
+
+.diviComFotoPerfil{
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    height: 35px; width: 35px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Aqui muda a largura que o dropdown da foto de perfil tera*/
+#dropPessoal{
+    min-width: 200px !important;
+}
+/*Classe que evita o estouro de elementos e corrige eles para o tamnho da tela*/
+
+.evitarEstouro{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Ajusta as margens dos icones que estam dentro da sidnav alinhados a direita*/
+.sidenav li > a > i.material-icons.right {
+    margin-right: 0 !important;
+}
+/*Ajusta as margins dos icones que estam dentro da sidnav alinhados a esquerda*/
+.sidenav li > a > i.material-icons {
+    margin: 0 15px 0 -10px !important;
+}
+/*Ajusta as margens dos icones dentro do colabiseble na sidnav*/
+.sidenav li > a > i.material-icons.icons-internos{
+    margin-left: 8px !important;
+}
+
+/*Faz os ajustes no icone de alvo que esta na sidNav*/
+.iconAlvo{
+    ser-select: none;
+    float: left;
+    max-width: 286px;
+    max-height: 201px;
+    margin-top: -78px;
+    /*margin-left: -41px;*/
+    color: white;
+    background-color: #06022B;
+}
+
+.iconAlvoDeslogado {
+    user-select: none;
+    float: left;
+    max-width: 245px;
+    max-height: 201px;
+    margin-top: 0px;
+    margin-left: 0px;
+    color: white;
+    background-color: #06022B;
+}
+
+.fc .fc-daygrid-event-harness{
+    cursor: pointer;
+}
+
+.modalVerDetalhes{
+    display: block;
+}
+
+.modalEditar{
+    display: none;
+}
+
+/*Mexando mo footer*/
+.iconsFooter {
+    margin-left: 3px;
+    margin-right: 3px;
+    float: left;
+    height: 1.7rem;
+    line-height: inherit;
+    font-size: 1.7rem;
+}
+
+/*Icone de olho no campo de senha*/
+.iconeOlho{
+    z-index: 997 !important;
+    margin-left: -25px !important;
+    margin-top: 13px !important;
+    position: relative !important;
+    cursor: pointer !important;
+}
+
+
+/*Meu container personalizado*/
+
+.containerMeu{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 95%;
+}
+
+@media only screen and (max-width: 601px) {
+    .containerMeu{
+        width: 100%;
+    }
+    .containerMeu .margeBottom {
+        margin-bottom: 20px;
+    }
+}
+
+/*toggle form contra*/
+#form-caixa #form-banco{
+    display: none;
+}
+
+#escolha {
+    display: block;
+}
+
+/*Impedir que os icones em geral sejam selecionaveis*/
+i{
+    user-select: none !important;
+}
+
+/*Para dexar os gráficos responsivos*/
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.containerT{
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    background: #fff;
+    /*box-shadow: 0 10px 20px rgba(0,0,0,0.25);*/
+
+}
+.containerT .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.containerT .menu li{
+    height: 80px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    list-style: none;
+    flex: 1;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+}
+.containerT .menu li a{
+    text-overflow: ellipsis;
+    color: #1d1f20;
+    transition: color 0.3s ease;
+}
+.containerT .menu li:hover a{
+    color: rgba(29,52,92, 1);
+}
+.containerT .menu li a.ativo{
+    color: rgba(29,52,92, 1);
+}
+
+.containerT .menu .line{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: rgba(29,52,92, 0.3);
+    left: 50%;
+    top: 0;
+    border-top: 3px solid rgba(29,52,92, 1);
+    transition: all 0.5s ease;
+}
+
+.scrollDemostrativo {
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+/* necessario para que o ellipsis.Jquery funcione */
+.ellip {
+    display: block;
+    height: 100%;
+}
+
+.ellip-line {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.ellip,
+.ellip-line {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.destaqueLinha:after{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    background-color: #0F8F00;
+    transition: width 0.2s ease-in-out;
+}
+
+.destaque:hover .destaqueLinha:after{
+    width: 4px;
+}
+
+.collectionItemDestaque {
+    position: relative;
+}
+
+.collectionItemDestaque:after {
+    content: "";
+    height: 100%;
+    top: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    background-color: #0F8F00;
+    transition: width 0.2s ease-in-out;
+}
+
+.collectionItemDestaque:hover:after{
+    width: 4px;
+}
+
+.clicar-item{
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+.clicar-item:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.backgroundChip .chip{
+    background-color: #1a237e;
+}
+
+.backgroundChipCLiFor .chip{
+    background-color: #fff;
+    color: black !important;
+    padding: 0 29px 0 0 !important;
+    margin: 0 0 -12px 0 !important;
+}
+
+.labelAtiva{
+    color: #9e9e9e !important;
+    -webkit-transform: translateY( -14px ) scale(0.8) !important;
+    transform: translateY( -14px ) scale(0.8) !important;
+    -webkit-transform-origin: 0 0 !important;
+    transform-origin: 0 0 !important;
+}
+
+.chips .input{
+    width: 0 !important;
+    overflow: hidden;
+}
+
+.chips {
+    overflow: hidden !important;
+}
+
+.modalSheetMaior{
+    max-height: 90% !important
+}
+
+.modalWidthMaior {
+    min-width: 85% !important;
+}
+
+.divPadrao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btnAddCategoria{
+    /*width: 13rem;*/
+    height: 38px;
+    line-height: 38px;
+}
+
+/* Mexendo no padding dos forms em cadastrar conta (e tambem serve para remover a rolagem lateral) */
+#form-caixa ,#form-banco{
+    padding: .75rem;
+    margin-bottom: 0;
+}
+
+div .divBtn .btn{
+    width: 13rem;
+    height: 38px;
+    line-height: 38px;
+}
+
+rowMeu2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0 !important;
+}
+
+
+
+/*Card personalizado para as entradas e saidas*/
+.cardEntradaSaida{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-column-break-inside: avoid;
+    max-height: 438px;
+    overflow: hidden;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 !important;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    background-color: rgba(6, 2, 43, 0.85) !important;
+    color: #FFF;
+}
+
+.cardHeaderTitle {
+    margin: 0 .75rem;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.cardHeaderTitleDois {
+    margin: 0 .75rem;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.cardMenu {
+    position: relative;
+    padding-right: 20px;
+    background-color: #FFF;
+    height: 388px;
+    overflow-y: auto;
+}
+
+.cardMenuAfter {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    height: 388px;
+    width: 2px;
+    background-color: #cecece;
+}
+
+.cardLinha {
+    position: relative;
+    display: flex;
+    flex: 1;
+    margin: 15px 0 20px;
+}
+
+.cardTime {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 80px;
+    margin-left: 15px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.cardIcon {
+    background-color: #FFF;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 121px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    color: #FFF;
+    z-index: 1;
+}
+
+.cardDetail, .cardDetail2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: .7rem;
+    margin-left: 48px;
+    transform: translateX(0);
+    transition: all .3s;
+}
+
+.cardDetail:hover {
+    background-color: #f0f0f0;
+    transform: translateX(4px);
+    cursor: pointer;
+}
+
+.cardDetail2:hover {
+    background-color: #f0f0f0;
+    transform: translateX(4px);
+    cursor: pointer;
+}
+
+.soucer {
+    line-height: 1.8;
+}
+
+.cardCategoria {
+    margin: .25rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    color: #404040
+}
+
+.cardRepeticao {
+    margin: 0 0 .25rem 0;
+    color: #404040;
+}
+
+.descricao {
+    white-space: normal !important;
+    line-height: 1 !important;
+}
+
+.row .col.ss12 {
+    width: 98%;
+    margin-left: 1%;
+    left: auto;
+    right: auto;
+}
+
+.setasSeletorasMes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setasSeletorasMes .textoMesAno {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.setasSeletorasMes .textoMesAno .textoMes {
+    line-height: 1;
+}
+
+#textoAnoU, #textoAnoF {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+}
+
+
+.setasSeletorasMes .material-icons {
+    font-size: 28px;
+    margin: 0px 3px;
+}
+
+#preloaderF, #preloaderU, #preloaderD{
+    position: absolute;
+    left: calc(50% - 32px);
+    top: calc(50% - 32px);
+}
+
+.textoSemRetorno {
+    font-size: 20px;
+    margin: .75rem .75rem;
+}
+/*Essa classe vai ser uma variação do m5 do materialize para um controle de div especifica na index*/
+
+@media only screen and (min-width: 601px) {
+    .row .col.mm5 {
+        width: 48.5%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .row .col.offset-mm1 {
+        margin-left: 3%;
+    }
+}
+@media only screen and (max-width: 993px) {
+    .divResponsivaCardCredito {
+        display: block !important;
+    }
+    .cardHeaderTitle {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px !important;
+    }
+}
+
+/*Card com o saldo na index quando esta no mobile*/
+.cardComSaldo {
+    background-color: rgba(6, 2, 43, 0.9);
+    margin-top: 0px;
+    padding: 0.75rem;
+}
+
+.textoBoaNoite {
+    font-size: 16px;
+}
+
+.textoSaldoAtual{
+    margin-top: -10px;
+}
+
+.pessoa {
+    padding: 0 .75rem;
+}
+
+/*Div que esta na tela verVendas.php que alinha o texto e o imput*/
+.divSelecionarData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    #dataFiltroVendas {
+        font-size: 20px !important;
+    }
+}
+
+#dataFiltroVendas {
+    border-bottom: none !important;
+    font-size: 24px;
+    margin: 0;
+    width: 135px;
+    height: 24px !important;
+    border-radius: 0.8rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.dataFiltroVendas:hover #dataFiltroVendas {
+    background-color: #d7d7d7;
+    cursor: pointer;
+}
+
+/*Div que esta na tela de verVendas.php e contem o icone e o texto dentro do collabcible*/
+.divIconeTextoColab {
+    align-items: center;
+    justify-content: center;
+}
+
+/*Car em verVendas.php*/
+.cardCabeca {
+    padding: 1rem 1rem 1rem 1.75rem;
+    height: 55px;
+    box-shadow: none;
+    margin-bottom: 0
+}
+.collapsibleCabeca {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divNomeCliente {
+    margin-left: 1.3rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .divNomeCliente {
+        margin-left: 0 !important;
+    }
+    .scrollDemostrativo {
+        max-height: 140px;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .overviewCardIcon {
+        min-width: 50px !important;
+        min-height: 50px !important;
+    }
+    .collectionItemModificado {
+        padding: 10px 5px 10px 5px !important;
+    }
+
+    .collectionItemModificado2 {
+        padding: 10px 29px 10px 5px !important;
+    }
+
+    .collectioCabeca {
+        padding: 15px 5px !important;
+    }
+
+    .mudarBtnFlatNalistagem {
+        padding: 0 !important;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .acessoRapido {
+        display: none !important;
+    }
+    .gridMeu {
+         display: grid !important;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+         grid-gap: .75rem !important;
+         padding: 0 !important;
+     }
+    .gridMeu>a {
+        margin: 0 auto !important;
+    }
+    .mudarBtnFlatNalistagem > i{
+        font-size: 30px;
+    }
+    .adcProduto {
+        display: block !important;
+    }
+
+    .textSalPreRe {
+        margin-left: 30% !important;
+    }
+
+    .divDescricaoMovimeto {
+        max-width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .paddingA {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .acessoRapido {
+        width: 100% !important;
+        grid-gap: .75rem !important;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .overviewCardTitle {
+        text-align: left !important;
+        padding-left: 5px;
+    }
+}
+
+
+.acessoRapido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    padding: 1rem 0;
+    grid-gap: 30px;
+    /*margin: 20px;*/
+}
+
+.overviewCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 60px;
+    transform: translateY(0);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all .3s;
+}
+
+.overviewCard:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.overviewCardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+    font-size: 21px;
+    color: #fff;
+}
+
+.overviewCardDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overviewCardTitle {
+    text-align: center;
+    width: 115px;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*Almentar o tamanho d card que contem o grafico para que caiba a diferença entre entrada e saida dos meses*/
+.graficoFluxoCaicaIndex {
+    height: 480px;
+    overflow: hidden;
+}
+
+/*Div que contem as divs com os saldo dos meses*/
+.saldoDoMes {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 13px;
+    background-color: #d7d7d7;
+    border-bottom: 1px solid #fff;
+}
+
+.saldoDoMesRealizado {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 13px;
+    background-color: #d7d7d7;
+}
+
+.saldoDoMes div, .saldoDoMesRealizado div {
+    width: 14.2856%;
+    display: flex;
+    line-height: 1.1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+    color: #666666;
+}
+
+.saldoIdicador, .saldoIndicadorRealizado{
+    font-size: .8rem;
+    line-height: 1;
+    text-align: center;
+}
+
+@media only screen and (max-width: 955px) {
+    .saldoDoMes div, .saldoDoMesRealizado div {
+        transform: rotate(-55deg);
+    }
+    .graficoFluxoCaicaIndex {
+        height: calc(70vh + 124px);
+    }
+
+    .saldoDoMes, .saldoDoMesRealizado {
+        height: 56px;
+    }
+}
+
+.iconeModalDetail {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 2.5rem !important;
+}
+
+.collectionItemModificado {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.collectionItemModificado2 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.adcProduto {
+    display: none;
+}
+
+.collectionItemModificado:hover {
+    background-color: #a5d6a7;
+    cursor: pointer;
+}
+
+.collectionItemModificado:hover .adcProduto {
+    display: block;
+}
+
+.row .col.s2Virgula5 {
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.collectioCabeca {
+    padding: 15px 30px;
+}
+
+.mudarBtnFlatNalistagem {
+    position: absolute;
+    right: 7px;
+}
+
+.fazPdding {
+    position: relative !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.paddingCollab {
+    padding: 1rem 2rem !important;
+}
+
+.paddingCollabAssinaturas {
+    padding: 10px 1% !important;
+}
+
+.botoesConfirmaEditaPendente {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+}
+
+/*Primeira parte para a escolha do controle*/
+.gridMeu {
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.gridMeu>a {
+    width: 170px;
+    height: 135px;
+    border-radius: 0.8rem;
+    background-color: #fff;
+    border: 4px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+.gridMeu>a:hover {
+    cursor: pointer;
+    background-color: #DB6A21;
+}
+
+.imgEtexto {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgEscolhaControle {
+    width: 50px;
+}
+
+/*Icone ao lado da listagem de produtos com a finalidade de reduzir ele*/
+.listProdutosTogle {
+    cursor: pointer;
+}
+
+.textoDescricaoProduto {
+    margin-top: 1rem;
+    line-height: 1;
+    height: 47px;
+    max-height: 47px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contentSecundary {
+    width: 23px;
+    height: 24px;
+    transition: all .1s linear;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.displayBasico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.displayBasicoDois {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.resumoContasLi > div {
+    max-width: 50%;
+}
+
+.colecaoScrol {
+    overflow-y: auto;
+    max-height: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #444444;
+}
+
+.headerCardizinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fontVinteQuatro {
+    font-size: 24px !important;
+}
+
+.floxu {
+    height: 86px;
+}
+
+.semBorder {
+    border: none !important;
+}
+
+.semMargeEborder {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.tiraPaddin {
+    padding: 3px 20px !important;
+}
+
+.apareceNovo {
+    display: inline
+}
+
+.btnSalvaEnovo {
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    font-size: 12px;
+    box-shadow: 0 0 black;
+
+    width: 13rem;
+    height: 38px;
+    line-height: 38px;
+
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .5px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.apareceNovo:hover .btnSalvaEnovo, .btnSalvaEnovo:hover {
+    color: teal;
+}
+
+@media only screen and (max-width: 764px) {
+    .btnSalvaEnovo {
+        width: 100% !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        color: teal !important;
+    }
+    .mudaMarge {
+        margin-bottom: 45px !important;
+    }
+}
+
+.displayLiMOdalDetail {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.textoBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.liModalDetailPrefEValor {
+    margin-bottom: 2px;
+}
+
+.liModalDetailData {
+    font-size: 12px;
+}
+
+.contentSecubdaryBody {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fazPadding1 {
+    padding-top: 1rem !important;
+    padding-left: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.conteinerListMovimentos {
+    width: 90%;
+}
+
+.movimentosCabeca {
+    position: relative;
+    padding: 7px 18px;
+}
+
+.movimentosFiltros {
+    z-index: 30;
+    height: 64px;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.fontMes {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.movimentosFiltroCabeca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lineQuarenta {
+    height: 40px;
+    line-height: 40px
+}
+
+.anoDeBaixoDoMes {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.movimentoMesSelect {
+    color: #5a5a5a;
+    width: 100px;
+    text-align: center;
+}
+
+.numeroDoMes {
+    font-size: 24px;
+    color: #5a5a5a;
+}
+
+.menosBorder {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.collectionItemMeu, .cabecalho {
+    padding: 7px 8px 6px;
+    border-bottom: 1px solid transparent;
+    overflow: inherit;
+    background: 0 0;
+    border-radius: 3px;
+    display: flex;
+    transition: background-color .2s linear;
+}
+
+.collectionItemMeu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.ss7 {
+    width: 58.33333333%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.ss3 {
+    width: 17%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.ss2 {
+    width: 35%;
+    position: relative;
+    display: inline-block;
+    float: left;
+    line-height: 1;
+    padding: 7px 0;
+}
+
+.iconeLitMovimentos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.divDescricaoMovimeto {
+    display: block;
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 1;
+    color: #555;
+    max-width: 80%;
+    word-break: break-word;
+    padding: 7px 0;
+}
+
+.descricaoMovimentoList {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.contaSpan {
+    font-size: 14px;
+    line-height: 1;
+    color: #5a5a5a;
+    display: inline-block;
+    max-width: 100%;
+    padding: 7px 0;
+}
+
+.sadoMovimento, .valorCabecalho {
+    font-weight: 400;
+    color: #555;
+    line-height: 1;
+    padding-right: 70px;
+}
+
+.escritaCabecalho {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.pagu {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+}
+
+.iconeMudaStatusMovi {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iconeMudaStatusMoviRelatorios {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btnDoEdit {
+    height: 30px !important;
+    line-height: 30px !important;
+    padding: 0 9px !important;
+}
+
+.iconeRecorrencia {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: #bdbdbd;
+}
+
+.movimentosFooter {
+    position: relative;
+    margin: -16px calc(-18px - .75rem) -4px;
+    min-height: 80px;
+    border-top: 1px solid #e0e0e0;
+    z-index: 1;
+}
+
+.footerInternoMovimentos {
+    margin-top: -1px;
+    padding: 18px 0 16px;
+    border: 1px solid transparent;
+}
+
+.spansSalPreSalRe {
+    display: flex;
+    color: #5a5a5a;
+}
+
+.textSalPreRe {
+    margin-left: 50%;
+    font-size: 14px;
+}
+
+.valorSalRe, .valorSalPre {
+    position: absolute;
+    right: calc(18px + .75rem + 40px);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.divPmpPmr {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    background-color: #fbfbfb;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.displayNoli, .noli2 {
+    position: relative;
+    display: flex;
+    padding: 5px 20px !important;
+    transition: background-color .2s linear;
+}
+
+.cabecaTabela {
+    position: relative;
+    display: flex;
+    padding: 10px 20px !important;
+    margin-bottom: -8px;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.displayNoli:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.limitaOcollection {
+    overflow-y: auto;
+    max-height: 229px;
+    margin-bottom: 0px !important;
+}
+
+.bolinha {
+    position: absolute;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+}
+
+.iconImpressao {
+    position: absolute;
+    margin: 0;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.divMovimentosPendentes {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    width: 50%;
+    word-break: break-word;
+}
+
+.impresso {
+    width: 70% !important;
+}
+
+.dataMoviPendente {
+    font-size: .8rem;
+    color: #555;
+    font-weight: 400;
+}
+
+.divValorPendente {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1;
+    padding-left: 10px;
+    width: 30%;
+    color: #555;
+}
+
+.divValorPendenteDiferentinho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    padding-left: 10px;
+    width: 30%;
+    color: #555;
+}
+
+.switchAlinhadoADireita {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+}
+
+.rosquinha {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    /*background-image: linear-gradient(to right, rgba(67,224,0, .7) 50% , rgba(255,139,0, .7) 50%) ;*/
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 50%;
+    margin: 32px auto;
+    border: 1px solid #fff;
+}
+
+.rosquinhaInterna {
+    position: absolute;
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.linhaBorda {
+    position: absolute;
+    width: 1px;
+    top: 0;
+    height: 6rem;
+    left: 50%;
+    background-color: #fff;
+}
+
+.menssagemGraficoVazio {
+    position: absolute;
+    margin: 42px auto;
+    width: 100%;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.indicadorSaldoDia {
+    width: 100%;
+    padding: 18px 32px 18px 8px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.nenhumaPendencia {
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 993px) {
+    .row .col.ll6 {
+        width: 49%;
+        margin-left: 2%;
+        left: auto;
+        right: auto;
+    }
+}
+
+.collecTotalPendentes {
+    margin-top: -1px;
+    color: #444;
+}
+
+.fakeImput {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    box-sizing: content-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+    user-select: none;
+}
+
+.fakeImput a {
+    position: absolute;
+    right: 0;
+}
+
+.fakeImput span.new:after {
+    content: none;
+}
+
+.destaque span.new:after {
+    content: none;
+}
+
+.fakeLabel {
+    color: #9e9e9e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    cursor: text;
+    -webkit-transform: translateY(-14px) scale(0.8);
+    transform: translateY(-17px) scale(0.8);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.modalAtualizaStatus {
+    top: 15% !important;
+}
+
+.todo {
+    width: 100%;
+}
+
+.padingAssinaturas {
+    padding: 1px 15px !important;
+    font-size: 13px;
+    color: #555;
+    border: none !important;
+}
+
+.padingAssinaturas i {
+    font-size: 19px;
+}
+
+.card .cardContent {
+    padding: 0;
+    border-radius: 0 0 2px 2px
+}
+
+.faixa {
+    position: absolute;
+    height: 22px;
+    width: 100px;
+    background-color: #4CAF50;
+    text-align: center;
+    transform: rotate(-45deg) translateX(-28px) translateY(-4px);
+}
+
+.btnAssinar {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.secundaryContentEdit {
+    position: absolute;
+    right: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iconeAlerta {
+    font-size: 17px !important;
+    width: 18px;
+    height: 18px !important;
+    line-height: 18px !important;
+    position: absolute;
+    left: 20px;
+    top: -37px;
+}
+
+.modalRegitraStyle {
+    top: 0 !important;
+    max-height: 100% !important;
+}
+
+.styleModalRecebimento {
+    max-height: 90%;
+}
+
+.helpIconeLabel {
+    font-size: 18px !important;
+    cursor: pointer;
+}
+
+.labelComIcone {
+    width: calc(100% + 2.75rem);
+}
+
+.labelComIconeDois {
+    width: calc(100% - 1.5rem);
+    transition: all .2s ease-out;
+}
+.labelComIconeDois.active {
+    width: 120% !important;
+}
+
+.labelComIcone div {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.spanIconeHelp {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gradienteCimaVermelho {
+    background-image: linear-gradient(to right, #ef9a9a, #e57373 , #ef9a9a);
+}
+
+.gradienteCimaVerde {
+    background-image: linear-gradient(to right, #a5d6a7, #81c784 , #a5d6a7);
+}
+
+.gradienteCimaLaranja {
+    background-image: linear-gradient(to right, #ffcc80, #ffb74d  , #ffcc80);
+}
+
+.fc-event-time {
+    display: none !important;
+}
+
+.fc-daygrid-day-events {
+    position: absolute !important;
+    top: 0;
+}
+
+.iconCentroDireita {
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.iconAdi:hover {
+    color: #4caf50;
+}
+
+.cardCredito-container {
+    margin-bottom: 20px;
+}
+
+.cardCardCredito {
+    padding-top: 20px;
+}
+
+.divResponsivaCardCredito {
+    display: flex;
+    align-items: center;
+}
+
+/*Parte que faz o check marker da assinatura*/
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 20px auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.iconeErro {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 20px auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142;
+    }
+}
+
+.contentSecondaryHover {
+    background-color: #F0F0F7;
+    border-radius: 10%;
+    padding: 4px;
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contentSecondaryHover:hover {
+    background-color: #e0e0ef;
+}
+
+.flatBtnNF {
+    margin-right: 0.75rem;
+    background-color: #F0F0F7;
+    border-radius: 10%;
+    position: relative;
+    padding: 4px;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+.flatBtnNF:hover{
+    background-color: #e0e0ef;
+}
+
+.flatBtnNF i {
+    font-size: 40px;
+    display: flex;
+}
+
+.cardRelatorio {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-radius: 4px;
+    transition: all .25s;
+    background-color: #F0F0F7;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cardRelatorio:hover{
+    transform: translateY(-3px);
+    background-color: #e0e0ef;
+}
+
+.checkboxMeu {
+
+}
+
+.checkboxMeu:checked + .labelMinha .bollMinha{
+    transform: translatex(24px) translateY(-50%);
+}
+
+.labelMinha {
+    background-color: #9e9e9e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    border-radius: 50px;
+    height: 14px;
+    width: 36px;
+    margin: 0 16px;
+    cursor: pointer;
+    /*transform: scale(1.5);*/
+}
+
+.bollMinha{
+    background-color: #26a69a;
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    transition: transform 0.15s linear;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.iconSecundaryModal {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    padding: 3px 5px 0 5px;
+    background: #F0F0F7;
+    border-radius: 2px;
+}
+
+.linhaCortandoTexto{
+    text-decoration: line-through;
+}
+
+.cursorNormal{
+    cursor: pointer;
+}
+
+.iconSecundaryModal:hover{
+    background-color: #e0e0ef;
+}
+
+.inputFieldNoMargin {
+    margin-bottom: 3px !important;
+    margin-top: 3px !important;
+}
+
+
+/*.lixo:hover {*/
+/*    color: #f44336 !important;*/
+/*}*/
+
+/*.sidenav .bodyColorCollapsible{*/
+/*    background-color: rgba(96, 122, 174, 0.2) !important;*/
+/*}*/
+
+/**/
+/*Deixa o toast no canto inferior esquerdo*/
+/*  #toast-container {*/
+/*      top: auto !important;*/
+/*      right: auto !important;*/
+/*      bottom: 10%;*/
+/*      left:7%;*/
+/*  }*/

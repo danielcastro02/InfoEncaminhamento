@@ -1,0 +1,14 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.1.6",
+        "ext-curl": "*",
+        "ramsey/uuid": "^4.1",
+        "pagarme/pagarme-php": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TCC\\Controle\\" : "Controle/",
+            "TCC\\Modelo\\" : "Modelo/"
+        }
+    }
+}

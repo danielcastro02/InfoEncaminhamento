@@ -1,0 +1,212 @@
+/*Item que fica na listagem de usuario*/
+
+.itemListUsuario{
+    float: right;
+    background-color: #F0F0F7;
+    position: absolute;
+    border-radius: 10%;
+    padding: 4px;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.itemListUsuario:hover{
+    background-color: #e0e0ef;
+}
+
+/*Primero e segundo icone na listagem*/
+.primeiroItem{
+    top: 18px;
+    right: 70px;
+}
+
+.primeiroItem i, .segundoItem i, .antesItem i  , .terceiroItem i{
+    font-size: 40px;
+    display: flex;
+}
+
+.segundoItem{
+    top: 18px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.antesItem{
+    top: 18px;
+    right: 124px;
+}
+.terceiroItem{
+    top: 18px;
+    right: 124px;
+}
+@media only screen and (max-width: 530px){
+    .primeiroItem i, .segundoItem i , .terceiroItem i{
+        font-size: 30px;
+    }
+
+    .itemListUsuario{
+        padding: 2px;
+    }
+
+    .primeiroItem{
+        top: 6px;
+        right: 9px;
+    }
+
+    .segundoItem{
+        top: 45px;
+        right: 9px;
+    }
+    .terceiroItem{
+        top: 6px;
+        right: 48px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .rowMeuDois{
+        position: relative !important;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: .75rem;
+        margin-bottom: -12px;
+    }
+}
+
+/*Alterando os botões na tela de listagem*/
+
+.rowMeu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.rowMeuDois{
+    position: absolute;
+    right: 0;
+}
+
+.containerListCuston {
+    width: 90%;
+}
+
+.btnFooter{
+    width: 13rem;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.2s;
+}
+
+.btnFooterUnic{
+    width: 15rem;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+    .btnFooter{
+        width: 45% !important;
+        overflow: hidden;
+        margin: 0;
+    }
+    .btnFooterUnic{
+        width: 90%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .containerListCuston {
+        width: 100%;
+        padding: 0 1%;
+    }
+}
+
+.btnFooter:hover, .btnFooterUnic:hover{
+    background-color: var(--corPadrao2);
+}
+
+/*Espaçamento interno do item no collection avatar*/
+.collection .collection-item.avatar{
+    padding-left: 53px !important;
+}
+/*Espaçamento interno do item no collection avatar quando não tem os pontos de ver mais detalhes*/
+.collection .collection-item.avatar.semPadding {
+    padding-left: 0 !important;
+}
+
+/*Div que evita qeubra de linha nas listagens*/
+.divWraper{
+    width: 65%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    max-height: 96px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.divWraperDiferentinha{
+    width: 80%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    max-height: 98px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 !important;
+}
+/*Icone more_vert ao lado*/
+.moreVertIcon{
+    padding: 0 !important;
+    width: min-content;
+    height: 64px;
+    margin-left: 0;
+    left: auto;
+    right: auto;
+    user-select: none;
+}
+
+/*Para fazer o togle nas listagens*/
+.infoPrincipal{
+    display: block;
+}
+
+.maisDetalhes{
+    display: none;
+}
+
+/*Div que envolve o conteudo a esquerda na listagem (Icone/imagem e badge se tiver)*/
+.divListParteEsquerda{
+    width: 53px;
+    height: 64px
+}
+/*Div que envolve o conteudo a esquerda na listagem (feito para a listagem de ordens) essa aqui é para quando
+tem um icone e não tem os pontos de ver mais detalhes*/
+.divListParteEsquerdaSemPontos{
+    width: 64px;
+    height: 64px
+}
+
+/*Ajeitar o badge*/
+
+span.badgeStatus{
+    padding: 1px 2px!important;
+    margin-left: -7px !important;
+    font-weight: 300 !important;
+    font-size: 0.8rem !important;
+    color: #fff !important;
+    border-radius: 2px !important;
+    float: none !important;
+    width: 40px !important;
+}
+
+span.badgeStatus.new:after {
+    content: none;
+}
