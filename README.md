@@ -1,6 +1,6 @@
 # Documentação de istalação
 
-Neste arquivo estarão as instruções de intalação deste sistema
+Neste arquivo estarão as instruções de instalação deste sistema
 
 ## Requisitos
 
