@@ -1,4 +1,4 @@
-# Documentação de isntalação
+# Documentação de istalação
 
 Neste arquivo estarão as instruções de intalação deste sistema
 
