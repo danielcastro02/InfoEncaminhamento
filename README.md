@@ -20,7 +20,7 @@ Usuário: ***administrador***
 Senha: ***12345678***
 
 - Apos realizar login, na navbar lateral clique em configurações.![enter image description here](https://tcc.markeyvip.com/imagens/tcc/menu.PNG)
--Na tela de configurações, na seção de Configurações de email, defina as configurações do seu serviço de SMTP
+- Na tela de configurações, na seção de Configurações de email, defina as configurações do seu serviço de SMTP
 Caso não possua serviço de SMTP, tambéem é possível desabilitar a verificação de email, porém é altamente recomendado não fazer isso.
 
 ## Recomendações
