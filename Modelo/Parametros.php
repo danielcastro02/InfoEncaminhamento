@@ -24,7 +24,7 @@ class Parametros
     private $active_chat = 0;
     private $confirma_email = 1;
     private $firebase_topic = "dispositivos";
-    private $nome_db = "tcc";
+    private $nome_db = "infoEncaminhamento";
     private $metodo_autenticacao = 1;
     private $smtp_server;
     private $smtp_user;
