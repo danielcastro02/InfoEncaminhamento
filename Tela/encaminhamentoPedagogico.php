@@ -30,7 +30,7 @@ include_once '../Base/footer.php';
 
 <script>
     $(document).ready(() => {
-        $('#divEncaminhamento').load('../../Componentes/formEncaminhamento.php', () => {
+        $('#divEncaminhamento').load('../Componentes/formEncaminhamento.php', () => {
             init(submitEncaminhamento)
             M.updateTextFields()
         })

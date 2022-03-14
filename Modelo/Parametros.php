@@ -18,13 +18,14 @@ class Parametros
     private $estado = "";
     private $app_token = "aegvasevservserfwserfvsev";
     private $envia_notificacao = 0;
-    private $server;
+    //private $server = "http://localhost/InfoEncaminhamento"; // colocar o do iff e apagar o construtor
+	private $server = "https://ciet.svs.iffarroupilha.edu.br/grissetti/InfoEncaminhamento"
     private $link_app = "https://play.google.com/store/apps/details?id=markey.hotel";
     private $qr_app = "";
     private $active_chat = 0;
     private $confirma_email = 1;
     private $firebase_topic = "dispositivos";
-    private $nome_db = "infoEncaminhamento";
+    private $nome_db = "infoencaminhamento";
     private $metodo_autenticacao = 1;
     private $smtp_server;
     private $smtp_user;
@@ -47,16 +48,7 @@ class Parametros
             error_reporting(E_ALL);
         } catch (\Exception $e) {
             $this->save();
-        }
-        if ($_SERVER["HTTP_HOST"] == 'localhost') {
-            $this->server = "https://" . gethostbyname(gethostbyaddr($_SERVER['REMOTE_ADDR']));
-            $requestURI = $_SERVER['REQUEST_URI'];
-            $arrRequest = explode("/", $requestURI);
-            $this->server = $this->server . "/" . strtolower($arrRequest[1]);
-        } else {
-            $this->server = "https://" . $_SERVER["HTTP_HOST"];
-        }
-
+        }        
     }
 
     public function getSmtpServer()

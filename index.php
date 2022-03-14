@@ -79,16 +79,16 @@ include_once './Base/iNav.php';
             if($pdoBase->getLogado()->getAdministrador() > 0){
             if($pdoBase->getLogado()->getSetor() == Encaminhamento::SET_CAE){
             ?>
-            url: '../Controle/encaminhamentoControle.php?function=selectTolistagemCAE',
+            url: './Controle/encaminhamentoControle.php?function=selectTolistagemCAE',
             <?php
             }else{
             ?>
-            url: '../Controle/encaminhamentoControle.php?function=selectTolistagemPedagogico',
+            url: './Controle/encaminhamentoControle.php?function=selectTolistagemPedagogico',
             <?php
             }
             }else {
             ?>
-            url: '../Controle/encaminhamentoControle.php?function=selectTolistagemByServidorLogado',
+            url: './Controle/encaminhamentoControle.php?function=selectTolistagemByServidorLogado',
             <?php
             }
             ?>
